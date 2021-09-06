@@ -1,0 +1,37 @@
+# i18n_es.messages
+#
+# Copyright (C) 2012-2021 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+ 
+manager.task.list.label.visibility = Visibilidad
+manager.task.list.label.title = Titulo
+manager.task.list.label.executionStart = Inicio
+manager.task.list.label.executionEnd = Finalizacion
+manager.task.list.label.workload = Carga
+
+manager.task.form.label.visibility = Visibilidad
+manager.task.form.label.title = Titulo
+manager.task.form.label.executionStart = Inicio
+manager.task.form.label.executionEnd = Finalizacion
+manager.task.form.label.description = Descripcion
+manager.task.form.label.link = Link
+manager.task.form.label.workload = Carga
+
+manager.task.form.button.create = Crear tarea
+manager.task.form.button.update = Actualizar tarea
+manager.task.form.button.delete = Borrar tarea
+manager.task.form.button.return = Volver
+
+
+manager.task.form.error.workloadmin =  La parte decimal debe ser menor que 0,6 porque representa los minutos
+manager.task.form.error.workload =  La carga de trabajo debe estar dentro del periodo de ejecucion
+manager.task.form.error.end = La fecha de fin tiene que ser posterior a la fecha de inicio
+manager.task.form.error.start = La fecha de inicio tiene que ser posterior a la actual
+manager.task.form.error.spam = Tu tarea contiene spam
+
+

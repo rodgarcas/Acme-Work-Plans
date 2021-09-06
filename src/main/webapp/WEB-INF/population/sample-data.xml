@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (C) 2012-2021 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans 
+	xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="classpath:/WEB-INF/population/conversion-service.xml"/>	
+	
+	<!-- Manager -->
+	
+	<bean name="managerUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="manager" />
+		<property name="password" value="manager" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="Manager" />
+				<property name="surname" value="Manager" />
+				<property name="email" value="manager@gmail.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="managerManager" />
+				<ref bean="managerAuthenticated"/>
+			</list>
+		</property>
+	</bean>
+
+	<bean name="managerManager" class="acme.entities.roles.Manager">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	<bean name="managerAuthenticated" class="acme.framework.entities.Authenticated">
+		<property name="userAccount" ref="managerUserAccount" />
+	</bean>
+	
+	
+	<!-- Shouts -->
+	
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/02/13 19:39"/>
+		<property name="author" value="John Doe"/>
+		<property name="text" value="I'm happy!"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<bean id="shout02" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2019/08/09 15:55"/>
+		<property name="author" value="Jane Doe"/>
+		<property name="text" value="I'm the master of my room!"/>
+		<property name="info" value="http://www.example.org"/>		
+	</bean>
+	
+	<bean id="shout03" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2020/09/07 00:00"/>
+		<property name="author" value="Foo Bar"/>
+		<property name="text" value="Just turning 50!"/>
+		<property name="info" value="http://happybirthday.com"/>		
+	</bean>
+	
+	<bean id="shout04" class="acme.entities.shouts.Shout">
+		<property name="author" value="Leslie Design-Testing"/>
+		<property name="text" value="Woa! This app's so cool!"/>
+		<property name="moment" value="2021/02/13 12:30"/>
+		<property name="info" value="http://www.sample-app.com"/>
+	</bean>
+  
+  <bean id="shout05" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/15 10:39"/>
+		<property name="author" value="autor3"/>
+		<property name="text" value="texto3"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	 <bean id="shout06" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/16 12:49"/>
+		<property name="author" value="autor4"/>
+		<property name="text" value="texto4"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	 <bean id="shout07" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/17 17:13"/>
+		<property name="author" value="autor5"/>
+		<property name="text" value="texto5"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/18 11:06"/>
+		<property name="author" value="autor6"/>
+		<property name="text" value="texto6"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<bean id="shout09" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/19 21:19"/>
+		<property name="author" value="autor7"/>
+		<property name="text" value="texto7"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<bean id="shout10" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/04/20 12:57"/>
+		<property name="author" value="autor8"/>
+		<property name="text" value="texto8"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	
+	
+	
+	<!-- Public Tasks Finished -->
+  
+	<bean id="task01" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea1F"/>
+		<property name="executionStart" value="2021/04/09 16:00"/>
+		<property name="executionEnd" value="2021/04/10 8:00"/>
+		<property name="workload" value="3"/>
+		<property name="description" value="Primera tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>	
+	</bean>
+		
+	<bean id="task02" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea2F"/>
+		<property name="executionStart" value="2021/04/11 12:00"/>
+		<property name="executionEnd" value="2021/04/12 16:20"/>
+		<property name="workload" value="4.33"/>
+		<property name="description" value="Segunda tarea"/>
+		<property name="link" value="http://www.sample-app.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task03" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea3F"/>
+		<property name="executionStart" value="2021/02/20 8:30"/>
+		<property name="executionEnd" value="2021/02/22 8:30"/>
+		<property name="workload" value="3.45"/>
+		<property name="description" value="Tercera tarea"/>
+		<property name="link" value="http://happybirthday.com"/>
+		<property name="manager" ref="managerManager"/>			
+	</bean>
+	
+	<bean id="task04" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea4F"/>
+		<property name="executionStart" value="2020/01/20 8:30"/>
+		<property name="executionEnd" value="2020/01/21 8:30"/>
+		<property name="workload" value="1.25"/>
+		<property name="description" value="Cuarta tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task05" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea5F"/>
+		<property name="executionStart" value="2020/03/20 8:30"/>
+		<property name="executionEnd" value="2020/03/22 8:30"/>
+		<property name="workload" value="7.33"/>
+		<property name="description" value="Quinta tarea"/>
+		<property name="link" value="http://happybirthday.com"/>
+		<property name="manager" ref="managerManager"/>			
+	</bean>
+	
+	<bean id="task06" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea6F"/>
+		<property name="executionStart" value="2020/01/20 9:30"/>
+		<property name="executionEnd" value="2020/01/30 9:30"/>
+		<property name="workload" value="9.4"/>
+		<property name="description" value="Sexta tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task07" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea7F"/>
+		<property name="executionStart" value="2020/01/19 14:30"/>
+		<property name="executionEnd" value="2020/01/19 16:30"/>
+		<property name="workload" value="1.45"/>
+		<property name="description" value="Séptima tarea"/>
+		<property name="link" value="http://happybirthday.com"/>
+		<property name="manager" ref="managerManager"/>			
+	</bean>
+	
+	<bean id="task08" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea8F"/>
+		<property name="executionStart" value="2020/01/27 22:30"/>
+		<property name="executionEnd" value="2020/01/29 22:30"/>
+		<property name="workload" value="4.55"/>
+		<property name="description" value="Octava tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task09" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea9F"/>
+		<property name="executionStart" value="2020/02/02 16:15"/>
+		<property name="executionEnd" value="2020/02/03 16:15"/>
+		<property name="workload" value="2.4"/>
+		<property name="description" value="Novena tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+		<bean id="task10" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea10F"/>
+		<property name="executionStart" value="2020/02/09 11:38"/>
+		<property name="executionEnd" value="2020/02/11 11:38"/>
+		<property name="workload" value="4.4"/>
+		<property name="description" value="Décima tarea"/>
+		<property name="link" value="http://happybirthday.com"/>
+		<property name="manager" ref="managerManager"/>			
+	</bean>
+	
+	<!-- Public Tasks Non-Finished -->
+  
+	<bean id="task11" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea11NF"/>
+		<property name="executionStart" value="2021/07/09 16:00"/>
+		<property name="executionEnd" value="2021/07/10 8:00"/>
+		<property name="workload" value="1.32"/>
+		<property name="description" value="Primera tarea"/>
+		<property name="link" value="http://happybirthday.com"/>
+		<property name="manager" ref="managerManager"/>			
+	</bean>
+		
+	<bean id="task12" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea12NF"/>
+		<property name="executionStart" value="2021/07/18 12:00"/>
+		<property name="executionEnd" value="2021/07/18 16:20"/>
+		<property name="workload" value="1.33"/>
+		<property name="description" value="Segunda tarea"/>
+		<property name="link" value="http://www.sample-app.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task13" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea13NF"/>
+		<property name="executionStart" value="2021/08/20 8:30"/>
+		<property name="executionEnd" value="2021/08/22 8:30"/>
+		<property name="workload" value="4.2"/>
+		<property name="description" value="Tercera tarea"/>
+		<property name="link" value="http://happybirthday.com"/>
+		<property name="manager" ref="managerManager"/>			
+	</bean>
+	
+	<bean id="task14" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea14NF"/>
+		<property name="executionStart" value="2021/08/22 10:30"/>
+		<property name="executionEnd" value="2021/08/23 10:30"/>
+		<property name="workload" value="2.4"/>
+		<property name="description" value="Cuarta tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task15" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea15NF"/>
+		<property name="executionStart" value="2021/08/24 8:30"/>
+		<property name="executionEnd" value="2021/08/25 16:30"/>
+		<property name="workload" value="3"/>
+		<property name="description" value="Quinta tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task16" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea16NF"/>
+		<property name="executionStart" value="2021/07/05 8:30"/>
+		<property name="executionEnd" value="2021/07/06 10:00"/>
+		<property name="workload" value="1.5"/>
+		<property name="description" value="Sexta tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task17" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea17NF"/>
+		<property name="executionStart" value="2020/07/16 14:30"/>
+		<property name="executionEnd" value="2022/07/19 14:30"/>
+		<property name="workload" value="7.2"/>
+		<property name="description" value="Séptima tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task18" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea18NF"/>
+		<property name="executionStart" value="2020/08/10 10:00"/>
+		<property name="executionEnd" value="2022/08/11 11:40"/>
+		<property name="workload" value="1.25"/>
+		<property name="description" value="Octava tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task19" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea19NF"/>
+		<property name="executionStart" value="2020/08/01 16:16"/>
+		<property name="executionEnd" value="2022/08/03 16:16"/>
+		<property name="workload" value="4.3"/>
+		<property name="description" value="Novena tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+		<bean id="task20" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PUBLIC"/>
+		<property name="title" value="Tarea20NF"/>
+		<property name="executionStart" value="2021/09/05 11:38"/>
+		<property name="executionEnd" value="2021/09/11 11:38"/>
+		<property name="workload" value="6.4"/>
+		<property name="description" value="Décima tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	
+	<!-- Private Tasks -->
+	
+	<bean id="task21" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PRIVATE"/>
+		<property name="title" value="Tarea21"/>
+		<property name="executionStart" value="2020/08/09 17:37"/>
+		<property name="executionEnd" value="2020/08/11 17:37"/>
+		<property name="workload" value="4.3"/>
+		<property name="description" value="Décima tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<bean id="task22" class="acme.entities.tasks.Task">
+		<property name="visibility" value="PRIVATE"/>
+		<property name="title" value="Tarea22"/>
+		<property name="executionStart" value="2020/09/10 11:40"/>
+		<property name="executionEnd" value="2022/09/11 11:40"/>
+		<property name="workload" value="2.4"/>
+		<property name="description" value="Décima tarea"/>
+		<property name="link" value="http://happybirthday.com"/>	
+		<property name="manager" ref="managerManager"/>		
+	</bean>
+	
+	<!-- Customisation -->
+	
+	<bean id="Customisation01" class="acme.entities.customisations.Customisation">
+		<property name="spamwordsEng" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar"/>
+		<property name="spamwordsSpa" value="sexo,duro,viagra,cialis,nigeria,has ganado, millon de dolares"/>
+		<property name="threshold" value="10.00"/>
+	</bean>
+	
+	
+
+</beans>
