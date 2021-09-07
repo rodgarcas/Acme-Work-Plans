@@ -8,5 +8,5 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-This is Acme Planner, my second project in D&T.
-Link to Github Repo: https://github.com/antferdom/Acme-Planner
+This is Acme Work-Plans, my second project in D&T.
+Link to Github Repo: https://github.com/antferdom/Acme-Work-Plans

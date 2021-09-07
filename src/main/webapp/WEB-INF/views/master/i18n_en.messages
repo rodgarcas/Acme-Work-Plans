@@ -15,7 +15,7 @@ master.banner.background = #827FE0
 # master.welcome ##############################################################
 
 master.welcome.title = Welcome!
-master.welcome.text = Welcome to Acme Planner! Our second project in D&T.
+master.welcome.text = Acme Work-Plans, Inc. is a world-wide company that specialises in managing work plans. The project will be initially launched in LATAM and the Commonwealth of Nations. 
 # master.menu #################################################################
 
 master.menu.home = Home
@@ -93,10 +93,10 @@ master.footer.label.spanish = Spanish
 
 master.company.title = The company
 master.company.text = \
-	Acme Planner, Inc. is a fictitious fictitious company that provides a \
+	Acme Work-Plans, Inc. is a fictitious fictitious company that provides a \
 	starter project for the students of the Design and Testing subject of the \
 	Software Engineering Curriculum of the University of Sevilla.
-master.company.name = Acme Planner, Inc.
+master.company.name = Acme Work-Plans, Inc.
 master.company.address = Number Street, City, State, Country
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

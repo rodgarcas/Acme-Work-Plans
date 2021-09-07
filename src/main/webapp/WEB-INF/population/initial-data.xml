@@ -73,4 +73,13 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
+	<!-- Customisation -->
+	
+	<bean id="Customisation01" class="acme.entities.customisations.Customisation">
+		<property name="spamwordsEng" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar"/>
+		<property name="spamwordsSpa" value="sexo,duro,viagra,cialis,nigeria,has ganado, millon de dolares"/>
+		<property name="threshold" value="10.00"/>
+	</bean>
+	
+	
 </beans>

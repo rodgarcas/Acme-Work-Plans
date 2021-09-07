@@ -52,7 +52,7 @@
 	<!-- Shouts -->
 	
 	<bean id="shout01" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/02/13 19:39"/>
+		<property name="moment" value="2021/09/01 19:39"/>
 		<property name="author" value="John Doe"/>
 		<property name="text" value="I'm happy!"/>
 		<property name="info"><null/></property>	
@@ -80,28 +80,28 @@
 	</bean>
   
   <bean id="shout05" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/15 10:39"/>
+		<property name="moment" value="2021/09/02 10:39"/>
 		<property name="author" value="autor3"/>
 		<property name="text" value="texto3"/>
 		<property name="info"><null/></property>	
 	</bean>
 	
 	 <bean id="shout06" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/16 12:49"/>
+		<property name="moment" value="2021/09/03 12:49"/>
 		<property name="author" value="autor4"/>
 		<property name="text" value="texto4"/>
 		<property name="info"><null/></property>	
 	</bean>
 	
 	 <bean id="shout07" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/17 17:13"/>
+		<property name="moment" value="2021/09/04 17:13"/>
 		<property name="author" value="autor5"/>
 		<property name="text" value="texto5"/>
 		<property name="info"><null/></property>	
 	</bean>
 	
 	<bean id="shout08" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/04/18 11:06"/>
+		<property name="moment" value="2021/09/05 11:06"/>
 		<property name="author" value="autor6"/>
 		<property name="text" value="texto6"/>
 		<property name="info"><null/></property>	
@@ -373,13 +373,6 @@
 		<property name="manager" ref="managerManager"/>		
 	</bean>
 	
-	<!-- Customisation -->
-	
-	<bean id="Customisation01" class="acme.entities.customisations.Customisation">
-		<property name="spamwordsEng" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar"/>
-		<property name="spamwordsSpa" value="sexo,duro,viagra,cialis,nigeria,has ganado, millon de dolares"/>
-		<property name="threshold" value="10.00"/>
-	</bean>
 	
 	
 
