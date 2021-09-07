@@ -1,0 +1,79 @@
+timestamp;test-class;test-method;time;description;result
+2021-06-01 13:38:16.323;acme.testing.administrator.customisation.AdministratorCustomisationListTest;list;34757;[1] recordIndex=0, spamwordsEng=sex,hard core,viagra,cialis,nigeria,you've won, million dollar, threshold=10.00;OK
+;;Promedio list;34757;;
+2021-06-01 13:34:26.068;acme.testing.administrator.customisation.AdministratorCustomisationUpdateTest;negativeUpdate;49098;[1] recordIndex=0, spamwordsEng= , threshold=10.00;OK
+2021-06-01 13:35:15.232;acme.testing.administrator.customisation.AdministratorCustomisationUpdateTest;negativeUpdate;42816;[2] recordIndex=0, spamwordsEng=sex,hard core,viagra,cialis,nigeria,you've won, million dollar, threshold=-30.00;OK
+2021-06-01 13:36:02.349;acme.testing.administrator.customisation.AdministratorCustomisationUpdateTest;negativeUpdate;36742;[3] recordIndex=0, spamwordsEng=sex,hard core,viagra,cialis,nigeria,you've won, million dollar, threshold=101.00;OK
+;;Promedio negativeUpdate;42885,33333;;
+2021-06-01 13:36:53.554;acme.testing.administrator.customisation.AdministratorCustomisationUpdateTest;positiveUpdate;45859;[1] recordIndex=0, spamwordsEng=sex,hard core,viagra,cialis,nigeria,you've won, million dollar, pain, threshold=30.00;OK
+;;Promedio positiveUpdate;45859;;
+2021-06-01 13:40:27.102;acme.testing.administrator.dashboard.AdministratorDashboardTest;showDashboard;36002;showDashboard();OK
+;;Promedio showDashboard;36002;;
+2021-06-01 13:39:42.74;acme.testing.administrator.dashboard.AdministratorDashboardTest;showEmptyDashboard;35228;showEmptyDashboard();OK
+;;Promedio showEmptyDashboard;35228;;
+2021-06-01 13:09:12.946;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;8259;[1] recordIndex=0, author= , text=descripcion, info=null;OK
+2021-06-01 13:09:33.581;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;13278;[2] recordIndex=0, author=author, text= , info=null;OK
+2021-06-01 13:09:51.395;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;11430;[3] recordIndex=0, author=author, text=descripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripciondescripcion, info=null;OK
+2021-06-01 13:10:07.092;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;9330;[4] recordIndex=0, author=a, text=descripcion, info=null;OK
+2021-06-01 13:10:24.782;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;13310;[5] recordIndex=0, author=authorauthorauthorauthorauthor, text=descripcion, info=null;OK
+2021-06-01 13:10:40.507;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;9354;[6] recordIndex=0, author=Viagra, text=descripcion, info=null;OK
+2021-06-01 13:11:02.214;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;13312;[7] recordIndex=0, author=author, text=Viagra, info=null;OK
+2021-06-01 13:11:22.947;acme.testing.anonymous.shout.AnonymousShoutCreateTest;negativeCreate;11337;[8] recordIndex=0, author=Viagra, text=Viagra, info=null;OK
+;;Promedio negativeCreate;11201,25;;
+2021-06-01 13:11:56.502;acme.testing.anonymous.shout.AnonymousShoutCreateTest;positiveCreate;25170;[1] recordIndex=4, author=testShout, text=this is a shout test!, info=null;OK
+;;Promedio positiveCreate;25170;;
+2021-06-01 13:07:20.677;acme.testing.anonymous.shout.AnonymousShoutListTest;list;17078;[1] recordIndex=0, moment=2021/05/15 17:13, author=autor5, text=texto5, info=null;OK
+2021-06-01 13:07:40.97;acme.testing.anonymous.shout.AnonymousShoutListTest;list;12940;[2] recordIndex=1, moment=2021/05/16 11:06, author=autor6, text=texto6, info=null;OK
+2021-06-01 13:08:01.263;acme.testing.anonymous.shout.AnonymousShoutListTest;list;13920;[3] recordIndex=2, moment=2021/05/17 21:19, author=autor7, text=texto7, info=null;OK
+2021-06-01 13:08:19.531;acme.testing.anonymous.shout.AnonymousShoutListTest;list;11921;[4] recordIndex=3, moment=2021/05/18 12:57, author=autor8, text=texto8, info=null;OK
+;;Promedio list;13964,75;;
+2021-06-01 13:13:01.739;acme.testing.anonymous.task.AnonymousTaskListPublicNonFinishedTest;listPublicNonFinished;24559;[1] recordIndex=0, visibility=PUBLIC, title=Tarea17NF, executionStart=2020/07/16 14:30, executionEnd=2022/07/19 14:30, description=Séptima tarea, link=http://happybirthday.com, workload=7.20;OK
+2021-06-01 13:13:37.149;acme.testing.anonymous.task.AnonymousTaskListPublicNonFinishedTest;listPublicNonFinished;29072;[2] recordIndex=1, visibility=PUBLIC, title=Tarea20NF, executionStart=2021/09/05 11:38, executionEnd=2021/09/11 11:38, description=Décima tarea, link=http://happybirthday.com, workload=6.40;OK
+;;Promedio listPublicNonFinished;26815,5;;
+2021-06-01 13:20:55.775;acme.testing.authenticated.manager.AuthenticatedManagerCreateTest;createManagerNegative;364;createManagerNegative();OK
+;;Promedio createManagerNegative;364;;
+2021-06-01 13:20:47.046;acme.testing.authenticated.manager.AuthenticatedManagerCreateTest;createManagerPositive;38585;createManagerPositive();OK
+;;Promedio createManagerPositive;38585;;
+2021-06-01 13:15:08.786;acme.testing.authenticated.task.AuthenticatedTaskListAllTest;listAll;45646;[1] recordIndex=0, visibility=PUBLIC, title=Tarea6F, executionStart=2020/01/20 09:30, executionEnd=2020/01/30 09:30, description=Sexta tarea, link=http://happybirthday.com, workload=9.40;OK
+2021-06-01 13:16:14.097;acme.testing.authenticated.task.AuthenticatedTaskListAllTest;listAll;57940;[2] recordIndex=1, visibility=PUBLIC, title=Tarea5F, executionStart=2020/03/20 08:30, executionEnd=2020/03/22 08:30, description=Quinta tarea, link=http://happybirthday.com, workload=7.33;OK
+2021-06-01 13:17:19.771;acme.testing.authenticated.task.AuthenticatedTaskListAllTest;listAll;56329;[3] recordIndex=2, visibility=PUBLIC, title=Tarea8F, executionStart=2020/01/27 22:30, executionEnd=2020/01/29 22:30, description=Octava tarea, link=http://happybirthday.com, workload=4.55;OK
+2021-06-01 13:18:17.882;acme.testing.authenticated.task.AuthenticatedTaskListAllTest;listAll;49761;[4] recordIndex=3, visibility=PUBLIC, title=Tarea10F, executionStart=2020/02/09 11:38, executionEnd=2020/02/11 11:38, description=Décima tarea, link=http://happybirthday.com, workload=4.40;OK
+2021-06-01 13:19:18.533;acme.testing.authenticated.task.AuthenticatedTaskListAllTest;listAll;56313;[5] recordIndex=4, visibility=PUBLIC, title=Tarea2F, executionStart=2021/04/11 12:00, executionEnd=2021/04/12 16:20, description=Segunda tarea, link=http://www.sample-app.com, workload=4.33;OK
+;;Promedio listAll;53197,8;;
+2021-06-01 12:50:52.912;acme.testing.manager.task.ManagerTaskCreateTest;createNegative;42769;[1] recordIndex=0, visibility=PUBLIC, title=task23, executionStart=null, executionEnd=2021/07/17 17:37, description=Tarea23, link=http://www.example.com, workload=3.2;OK
+2021-06-01 12:51:49.915;acme.testing.manager.task.ManagerTaskCreateTest;createNegative;48660;[2] recordIndex=0, visibility=PRIVATE, title=null, executionStart=2021/07/15 17:37, executionEnd=2021/07/18 17:37, description=Tarea24, link=null, workload=2.3;OK
+2021-06-01 12:52:41.914;acme.testing.manager.task.ManagerTaskCreateTest;createNegative;46666;[3] recordIndex=0, visibility=PUBLIC, title=task25, executionStart=null, executionEnd=2021/07/19 17:37, description=Tarea25, link=http://www.example.com, workload=1.5;OK
+;;Promedio createNegative;46031,66667;;
+2021-06-01 12:50:01.776;acme.testing.manager.task.ManagerTaskCreateTest;createPositive;75923;[1] recordIndex=0, visibility=PUBLIC, title=New Tarea15NF, executionStart=2021/08/22 10:30, executionEnd=2021/08/23 10:30, description=Quinta tarea, link=http://happybirthday.com, workload=3.00;OK
+;;Promedio createPositive;75923;;
+2021-06-01 12:59:58.288;acme.testing.manager.task.ManagerTaskDeleteTest;delete;47969;[1] recordIndex=0;OK
+2021-06-01 13:00:51.003;acme.testing.manager.task.ManagerTaskDeleteTest;delete;45363;[2] recordIndex=1;OK
+2021-06-01 13:01:49.195;acme.testing.manager.task.ManagerTaskDeleteTest;delete;47855;[3] recordIndex=2;OK
+2021-06-01 13:02:40.755;acme.testing.manager.task.ManagerTaskDeleteTest;delete;46192;[4] recordIndex=3;OK
+2021-06-01 13:03:25.944;acme.testing.manager.task.ManagerTaskDeleteTest;delete;39840;[5] recordIndex=4;OK
+;;Promedio delete;45443,8;;
+2021-06-01 12:54:13.291;acme.testing.manager.task.ManagerTaskListTest;listAll;53338;[1] recordIndex=0, visibility=PUBLIC, title=Tarea9F, executionStart=2020/02/02 16:15, executionEnd=2020/02/03 16:15, description=Novena tarea, link=http://happybirthday.com, workload=2.40;OK
+2021-06-01 12:55:15.919;acme.testing.manager.task.ManagerTaskListTest;listAll;54274;[2] recordIndex=1, visibility=PUBLIC, title=Tarea10F, executionStart=2020/02/09 11:38, executionEnd=2020/02/11 11:38, description=Décima tarea, link=http://happybirthday.com, workload=4.40;OK
+2021-06-01 12:56:10.518;acme.testing.manager.task.ManagerTaskListTest;listAll;51258;[3] recordIndex=2, visibility=PUBLIC, title=Tarea11NF, executionStart=2021/07/09 16:00, executionEnd=2021/07/10 08:00, description=Primera tarea, link=http://happybirthday.com, workload=1.32;OK
+2021-06-01 12:57:17.274;acme.testing.manager.task.ManagerTaskListTest;listAll;60391;[4] recordIndex=3, visibility=PUBLIC, title=Tarea12NF, executionStart=2021/07/18 12:00, executionEnd=2021/07/18 16:20, description=Segunda tarea, link=http://www.sample-app.com, workload=1.33;OK
+2021-06-01 12:58:28.284;acme.testing.manager.task.ManagerTaskListTest;listAll;61637;[5] recordIndex=4, visibility=PUBLIC, title=Tarea13NF, executionStart=2021/08/20 08:30, executionEnd=2021/08/22 08:30, description=Tercera tarea, link=http://happybirthday.com, workload=4.20;OK
+;;Promedio listAll;56179,6;;
+2021-06-01 13:06:13.363;acme.testing.manager.task.ManagerTaskUpdateTest;updateNegative;58971;[1] recordIndex=0, visibility=PUBLIC, title=nigeria, executionStart=2019/06/10 13:00, executionEnd=2019/06/20 10:00, description=viagra, link=null, workload=1.8;OK
+;;Promedio updateNegative;58971;;
+2021-06-01 13:05:08.976;acme.testing.manager.task.ManagerTaskUpdateTest;updatePositive;57881;[1] recordIndex=0, visibility=PUBLIC, title=Tarea 30, executionStart=2021/06/10 13:00, executionEnd=2021/06/20 10:00, description=Prueba tarea, link=http://www.published.org, workload=1.25;OK
+;;Promedio updatePositive;57881;;
+2021-06-01 13:22:36.599;acme.testing.SignUpTest;positiveSignUp;47444;[1] username=johnny, password=johnny, name=Johnny, surname=López, email=john@mail.com;OK
+2021-06-01 13:23:33.436;acme.testing.SignUpTest;positiveSignUp;51463;[2] username=lorraine, password=lorraine, name=Lorraine, surname=Williams, email=lorraine@yellow-house.com;OK
+2021-06-01 13:24:29.202;acme.testing.SignUpTest;positiveSignUp;47428;[3] username=leslie, password=leslie, name=Leslie Marti, surname=Ramport, email=leslie@us.es;OK
+2021-06-01 13:25:26.006;acme.testing.SignUpTest;positiveSignUp;47470;[4] username=robert, password=robert, name=Robert, surname=Johnson, email=robert@mail.server.com;OK
+2021-06-01 13:26:21.825;acme.testing.SignUpTest;positiveSignUp;48459;[5] username=pepeluis, password=pepeluis, name=José Luis, surname=Sørensen, email=ppepe.sorensen@sweden.sw;OK
+2021-06-01 13:27:26.572;acme.testing.SignUpTest;positiveSignUp;58395;[6] username=luisa, password=luisa, name=Luisa, surname=Martínez López, email=luisa@luisa.name;OK
+2021-06-01 13:28:21.371;acme.testing.SignUpTest;positiveSignUp;48454;[7] username=lukas, password=lukas, name=Lukas, surname=Smith, email=lukas@mail.com;OK
+2021-06-01 13:29:17.912;acme.testing.SignUpTest;positiveSignUp;53210;[8] username=mary-dt, password=mary-dt, name=Mary, surname=Design-Testing, email=mary@email.com;OK
+2021-06-01 13:30:14.472;acme.testing.SignUpTest;positiveSignUp;50135;[9] username=jorge, password=jorge, name=Jorge, surname=Libertad, email=jorge@yahoo.com;OK
+2021-06-01 13:31:06.696;acme.testing.SignUpTest;positiveSignUp;45840;[10] username=sonia, password=sonia, name=Snojia Guðrún, surname=Þor-Anaïs, email=sonja@liberty.de;OK
+2021-06-01 13:32:07.18;acme.testing.SignUpTest;positiveSignUp;57157;[11] username=parker, password=parker, name=Parker Sigurður, surname=Mañón-Perigüeñez, email=parker@outlook.com;OK
+2021-06-01 13:32:53.946;acme.testing.SignUpTest;positiveSignUp;41418;[12] username=manolo, password=manolo, name=Manuel Raúl, surname=Benítez López, email=manolo@engineer.com;OK
+;;Promedio positiveSignUp;49739,41667;;
+;;;;;
+;;Promedio general;39395,96491;;
