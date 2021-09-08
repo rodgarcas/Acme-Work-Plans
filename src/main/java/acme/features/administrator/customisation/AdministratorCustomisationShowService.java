@@ -22,14 +22,14 @@ public class AdministratorCustomisationShowService implements AbstractShowServic
 
 		@Override
 		public boolean authorise(final Request<Customisation> request) {
-			// TODO Auto-generated method stub
+
 			assert request != null;
 			return true;
 		}
 
 		@Override
 		public void unbind(final Request<Customisation> request, final Customisation entity, final Model model) {
-			// TODO Auto-generated method stub
+
 			assert request != null;
 			assert entity != null;
 			assert model != null;
@@ -42,11 +42,10 @@ public class AdministratorCustomisationShowService implements AbstractShowServic
 
 		@Override
 		public Customisation findOne(final Request<Customisation> request) {
-			// TODO Auto-generated method stub
+
 			assert request != null;
 			final List<Customisation> res = (List<Customisation>) this.repository.findMany();
-			final Customisation result = res.get(0);
-			return result;
+			return res.get(0);
 		}
 
 }

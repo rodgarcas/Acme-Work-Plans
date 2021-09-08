@@ -8,13 +8,16 @@
 	<acme:message code="administrator.dashboard.form.title.general-indicators"/>
 </h2>
 
-<table class="table table-sm">	
+<table class="table table-sm">
+	<caption>
+	 <acme:message code="administrator.dashboard.form.title.general-indicators"/>
+	 </caption>	
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.numPublicTasks"/>
 		</th>
 		<td>
-			<acme:print value="${numPublicTasks}"/>
+		<acme:form-textbox readonly="true" code="" path="numPublicTasks" />
 		</td>
 	</tr>
 	<tr>
@@ -22,7 +25,7 @@
 			<acme:message code="administrator.dashboard.form.label.numPrivateTasks"/>
 		</th>
 		<td>
-			<acme:print value="${numPrivateTasks}"/>
+			<acme:form-textbox readonly="true" code="" path="numPrivateTasks" />
 		</td>
 	
 	</tr>	
@@ -32,7 +35,7 @@
 			<acme:message code="administrator.dashboard.form.label.numFinishedTasks"/>
 		</th>
 		<td>
-			<acme:print value="${numFinishedTasks}"/>
+			<acme:form-textbox readonly="true" code="" path="numFinishedTasks" />
 		</td>
 	
 	</tr>
@@ -41,7 +44,7 @@
 			<acme:message code="administrator.dashboard.form.label.numNotFinishedTasks"/>
 		</th>
 		<td>
-			<acme:print value="${numNotFinishedTasks}"/>
+			<acme:form-textbox readonly="true" code="" path="numNotFinishedTasks" />
 		</td>
 	
 	</tr>
@@ -50,13 +53,17 @@
 	<acme:message code="administrator.dashboard.form.title.executionPeriods"/>
 </h2>
 
-<table class="table table-sm">	
+<table class="table table-sm">
+	<caption>
+	 <acme:message code="administrator.dashboard.form.title.executionPeriods"/>
+	 </caption>	
+
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.avgTasks"/>
 		</th>
 		<td>
-			<acme:print value="${avgTaskExecutionPeriods}"/> 
+			<acme:form-textbox readonly="true" code="" path="avgTaskExecutionPeriods" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -65,7 +72,7 @@
 			<acme:message code="administrator.dashboard.form.label.devTasks"/>
 		</th>
 		<td>
-			<acme:print value="${devTaskExecutionPeriods}"/> 
+		<acme:form-textbox readonly="true" code="" path="devTaskExecutionPeriods" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -74,7 +81,7 @@
 			<acme:message code="administrator.dashboard.form.label.minTasks"/>
 		</th>
 		<td>
-			<acme:print value="${minTaskExecutionPeriods}"/> 
+			<acme:form-textbox readonly="true" code="" path="minTaskExecutionPeriods" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -83,7 +90,7 @@
 			<acme:message code="administrator.dashboard.form.label.maxTasks"/>
 		</th>
 		<td>
-			<acme:print value="${maxTaskExecutionPeriods}"/> 
+			<acme:form-textbox readonly="true" code="" path="maxTaskExecutionPeriods" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -95,12 +102,15 @@
 </h2>
 
 <table class="table table-sm">	
+	<caption>
+	 <acme:message code="administrator.dashboard.form.title.taskWorkloads"/>
+	 </caption>	
 	<tr>
 		<th scope="row">
 			<acme:message code="administrator.dashboard.form.label.avgTasks"/>
 		</th>
 		<td>
-			<acme:print value="${avgTaskWorkloads}"/> 
+			<acme:form-textbox readonly="true" code="" path="avgTaskWorkloads" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -109,7 +119,7 @@
 			<acme:message code="administrator.dashboard.form.label.devTasks"/>
 		</th>
 		<td>
-			<acme:print value="${devTaskWorkloads}"/> 
+			<acme:form-textbox readonly="true" code="" path="devTaskWorkloads" /> 
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -118,7 +128,7 @@
 			<acme:message code="administrator.dashboard.form.label.minTasks"/>
 		</th>
 		<td>
-			<acme:print value="${minTaskWorkloads}"/> 
+			<acme:form-textbox readonly="true" code="" path="minTaskWorkloads" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>
@@ -127,7 +137,7 @@
 			<acme:message code="administrator.dashboard.form.label.maxTasks"/>
 		</th>
 		<td>
-			<acme:print value="${maxTaskWorkloads}"/> 
+			<acme:form-textbox readonly="true" code="" path="maxTaskWorkloads" />
 			<acme:message code="administrator.dashboard.form.result.days"/>
 		</td>
 	</tr>

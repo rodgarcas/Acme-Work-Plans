@@ -23,7 +23,7 @@
 	<acme:form-textbox code="anonymous.task.form.label.title" path="title"/>
 	<acme:form-textbox code="anonymous.task.form.label.executionStart" path="executionStart"/>
 	<acme:form-textbox code="anonymous.task.form.label.executionEnd" path="executionEnd"/>
-	<acme:form-textbox code="anonymous.task.form.label.description" path="description"/>
+	<acme:form-textarea code="anonymous.task.form.label.description" path="description"/>
 	<acme:form-textbox code="anonymous.task.form.label.link" path="link"/>
 	<acme:form-textbox code="anonymous.task.form.label.workload" path="workload"/>
 	
