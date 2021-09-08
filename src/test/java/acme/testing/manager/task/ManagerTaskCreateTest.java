@@ -64,7 +64,7 @@ public class ManagerTaskCreateTest extends AcmeWorkPlansTest {
 						 title (NotBlank, Length(min = 1, max = 79))
 						 executionStart (NotNull)
 						 executionEnd (NotNull)
-						 workload (NotNull, Min(0))
+						 workload (NotNull, Min(0), Digits(integer=2, fraction = 2))
 						 description (NotBlank, Length(min =1, max = 499))
 						 link (URL)
 						 
@@ -72,7 +72,7 @@ public class ManagerTaskCreateTest extends AcmeWorkPlansTest {
 						 title (NotBlank, Length(min = 1, max = 79))
 						 executionStart (NotNull)
 						 executionEnd (NotNull)
-						 workload (NotNull, Min(0))
+						 workload (NotNull, Min(0), Digits(integer=2, fraction = 2))
 						 description (NotBlank, Length(min =1, max = 499))
 						 link (URL)
 	Expected result: Error in each attribute constraint

@@ -101,7 +101,35 @@
 	
 	
 	<!-- Shouts -->
+	<bean id="shout07" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/09/01 17:13"/>
+		<property name="author" value="autor5"/>
+		<property name="text" value="texto5"/>
+		<property name="info"><null/></property>	
+	</bean>
 	
+	<bean id="shout08" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/09/02 11:06"/>
+		<property name="author" value="autor6"/>
+		<property name="text" value="texto6"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<bean id="shout09" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/09/03 21:19"/>
+		<property name="author" value="autor7"/>
+		<property name="text" value="texto7"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<bean id="shout10" class="acme.entities.shouts.Shout">
+		<property name="moment" value="2021/09/04 12:57"/>
+		<property name="author" value="autor8"/>
+		<property name="text" value="texto8"/>
+		<property name="info"><null/></property>	
+	</bean>
+	
+	<!-- Caducados -->
 	<bean id="shout01" class="acme.entities.shouts.Shout">
 		<property name="moment" value="2021/02/13 19:39"/>
 		<property name="author" value="John Doe"/>
@@ -144,33 +172,7 @@
 		<property name="info"><null/></property>	
 	</bean>
 	
-	 <bean id="shout07" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/15 17:13"/>
-		<property name="author" value="autor5"/>
-		<property name="text" value="texto5"/>
-		<property name="info"><null/></property>	
-	</bean>
-	
-	<bean id="shout08" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/16 11:06"/>
-		<property name="author" value="autor6"/>
-		<property name="text" value="texto6"/>
-		<property name="info"><null/></property>	
-	</bean>
-	
-	<bean id="shout09" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/17 21:19"/>
-		<property name="author" value="autor7"/>
-		<property name="text" value="texto7"/>
-		<property name="info"><null/></property>	
-	</bean>
-	
-	<bean id="shout10" class="acme.entities.shouts.Shout">
-		<property name="moment" value="2021/08/18 12:57"/>
-		<property name="author" value="autor8"/>
-		<property name="text" value="texto8"/>
-		<property name="info"><null/></property>	
-	</bean>
+
 	
 	
 	
@@ -287,7 +289,7 @@
 		<property name="manager" ref="managerManager"/>			
 	</bean>
 	
-	<!-- Public Tasks Non-Finished -->
+	
   
 	<bean id="task11" class="acme.entities.tasks.Task">
 		<property name="visibility" value="PUBLIC"/>
@@ -354,6 +356,8 @@
 		<property name="link" value="http://happybirthday.com"/>	
 		<property name="manager" ref="managerManager"/>		
 	</bean>
+	
+	<!-- Public Tasks Non-Finished -->
 	
 	<bean id="task17" class="acme.entities.tasks.Task">
 		<property name="visibility" value="PUBLIC"/>
