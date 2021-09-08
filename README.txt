@@ -10,3 +10,6 @@
 
 This is Acme Work-Plans, my second project in D&T.
 Link to Github Repo: https://github.com/antferdom/Acme-Work-Plans
+Release: Acme Work-Plans v1.2
+
+June Githhub Repo: https://github.com/antferdom/Acme-Planner
