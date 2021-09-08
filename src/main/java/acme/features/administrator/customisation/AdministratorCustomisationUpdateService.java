@@ -24,7 +24,7 @@ public class AdministratorCustomisationUpdateService implements AbstractUpdateSe
 	
 	@Override
 	public boolean authorise(final Request<Customisation> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 
 		return true;
@@ -32,7 +32,7 @@ public class AdministratorCustomisationUpdateService implements AbstractUpdateSe
 
 	@Override
 	public void bind(final Request<Customisation> request, final Customisation entity, final Errors errors) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -43,7 +43,7 @@ public class AdministratorCustomisationUpdateService implements AbstractUpdateSe
 
 	@Override
 	public void unbind(final Request<Customisation> request, final Customisation entity, final Model model) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -56,7 +56,7 @@ public class AdministratorCustomisationUpdateService implements AbstractUpdateSe
 
 	@Override
 	public Customisation findOne(final Request<Customisation> request) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 
 		final Customisation result;
@@ -69,7 +69,7 @@ public class AdministratorCustomisationUpdateService implements AbstractUpdateSe
 
 	@Override
 	public void validate(final Request<Customisation> request, final Customisation entity, final Errors errors) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
@@ -78,7 +78,7 @@ public class AdministratorCustomisationUpdateService implements AbstractUpdateSe
 
 	@Override
 	public void update(final Request<Customisation> request, final Customisation entity) {
-		// TODO Auto-generated method stub
+
 		assert request != null;
 		assert entity != null;
 

@@ -15,7 +15,7 @@ master.banner.background = #827FE0
 # master.welcome ##############################################################
 
 master.welcome.title = Welcome!
-master.welcome.text = Acme Work-Plans, Inc. is a world-wide company that specialises in managing work plans. The project will be initially launched in LATAM and the Commonwealth of Nations. 
+master.welcome.text = Welcome to Acme Work-Plans! Our second project in D&T.
 # master.menu #################################################################
 
 master.menu.home = Home

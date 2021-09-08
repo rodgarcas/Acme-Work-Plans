@@ -7,6 +7,10 @@ import java.util.regex.Pattern;
 
 public class Spam {
 	
+	private Spam() {
+	    throw new IllegalStateException("Utility class");
+	  }
+	
 	public static Boolean isSpam(String text, String spamwords, Double  threshold) {
 		spamwords = spamwords.replace(" ", "");
 		List<String> spamLs = Arrays.asList( spamwords.split(","));
@@ -33,8 +37,7 @@ public class Spam {
 		}
 		
 		Double cSpam = (double) nSpam/nTxt4 * 100.0;
-		Boolean res = cSpam > threshold ? true : false;
-		return res;
+		return cSpam > threshold;
 		
 	}
 
