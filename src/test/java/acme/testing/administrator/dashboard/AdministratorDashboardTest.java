@@ -9,7 +9,7 @@ import acme.testing.AcmeWorkPlansTest;
 public class AdministratorDashboardTest extends AcmeWorkPlansTest {
 
 	@ParameterizedTest
-	@CsvFileSource(resources = "/administrator/dashboard/positive.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/administrator/dashboard/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void showPositive(final int recordIndex,
 		final String numPublicTasks, final String numPrivateTasks,final String numFinishedTasks, final String numNotFinishedTasks, 

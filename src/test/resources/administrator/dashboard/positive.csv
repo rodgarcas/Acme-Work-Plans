@@ -1,2 +1,0 @@
-recordIndex, numPublicTasks, numPrivateTasks, numFinishedTasks, numNotFinishedTasks, avgTaskExecutionPeriods, devTaskExecutionPeriods,minTaskExecutionPeriods, maxTaskExecutionPeriods,avgTaskWorkloads, devTaskWorkloads,minTaskWorkloads, maxTaskWorkloads
-0, 20, 2, 11, 11, 134.68, 281.47, 0.00, 733.00, 3.69, 2.21, 1.25, 9.40 

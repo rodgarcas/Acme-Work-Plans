@@ -16,7 +16,7 @@ public class AnonymousShoutListTest extends AcmeWorkPlansTest{
 	Expected result: Visualisation of shouts within a month-last
 	*/
 	@ParameterizedTest
-	@CsvFileSource(resources = "/anonymous/shout/positive-list.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/anonymous/shout/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(20)
 	public void list(final int recordIndex, final String moment, final String author, final String text, final String info) {
 		

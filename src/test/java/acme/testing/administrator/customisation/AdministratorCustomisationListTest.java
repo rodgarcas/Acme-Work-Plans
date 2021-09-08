@@ -17,7 +17,7 @@ public class AdministratorCustomisationListTest extends AcmeWorkPlansTest{
 	*/
 	
 	@ParameterizedTest
-	@CsvFileSource(resources = "/administrator/customisation/positive-list.csv", encoding = "utf-8", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/administrator/customisation/list-all.csv", encoding = "utf-8", numLinesToSkip = 1)
 	@Order(10)
 	public void list(final int recordIndex, final String spamwordsEng, final String threshold) {		
 		super.signIn("administrator", "administrator");
